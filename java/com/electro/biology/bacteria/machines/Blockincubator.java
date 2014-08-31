@@ -29,7 +29,7 @@ public class Blockincubator extends Block{
 	@SideOnly(Side.CLIENT)
 	public IIcon getIcon(int side,int meta){
 		if (side == meta){
-			return incubatorFront;
+			return frontIcon;
 		} else {
 			return blockIcon;
 		}
