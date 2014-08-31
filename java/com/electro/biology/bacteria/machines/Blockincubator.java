@@ -2,6 +2,7 @@ package com.electro.biology.bacteria.machines;
 
 import java.util.List;
 
+import com.electro.biology.electrolysm_biology;
 import com.electro.biology.handlers.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -22,7 +23,10 @@ public class Blockincubator extends Block{
 	public Blockincubator()
 	{
 		super(Material.iron);
-		setCreativeTab(CreativeTabs.tabCombat);
+		setCreativeTab(electrolysm_biology.TabElectrolysm_Biology);
+		setStepSound(soundTypeMetal);
+		setHardness(5.0F);
+		setResistance(10.0F);
 	}
 	
 	@Override 

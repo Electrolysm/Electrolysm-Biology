@@ -1,10 +1,12 @@
 package com.electro.biology;
 
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 
 import com.electro.biology.bacteria.machines.Blockincubator;
 import com.electro.biology.handlers.Reference;
 import com.electro.biology.handlers.RegisterHelper;
+import com.electro.biology.handlers.TabElectrolysm_Biology;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -12,6 +14,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class electrolysm_biology {
+	
+	public static CreativeTabs TabElectrolysm_Biology = new TabElectrolysm_Biology(CreativeTabs.getNextID(),"Electrolysm | Biology");
     //Bacteria Machines
 	public static Block incubator;
 	
