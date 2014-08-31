@@ -12,14 +12,14 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class electrolysm_biology {
-
+    //Bacteria Machines
 	public static Block incubator;
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		//Bacteria Machines
 		incubator = new Blockincubator().setBlockName("incubator"); 
-		
 		RegisterHelper.registerBlock(incubator);
 }
 }
