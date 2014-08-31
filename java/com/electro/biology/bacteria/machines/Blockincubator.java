@@ -31,7 +31,7 @@ public class Blockincubator extends Block{
 		if (side == meta){
 			return incubatorFront;
 		} else {
-			return blockIcon }
+			return blockIcon;
 		}
 	}
 }
