@@ -16,21 +16,22 @@ public class Blockincubator extends Block{
 		super(Material.iron);
 		
 	}
-@Override 
-@SideOnly(Side.CLIENT)
-public void registerBlockIcons(IIconRegister reg)
-{
-	blockIcon = reg.registerIcon(Reference.MODID + ":incubator");
-	frontIcon = reg.registerIcon(Reference.MODID + "incubatorFront");
-}
-@Override
-@SideOnly(Side.CLIENT)
-public IIcon getIcon(int side,int meta){
-	if (side == meta){
-		return incubatorFront;
-		else {
-			return blockIcon }
+	
+	@Override 
+	@SideOnly(Side.CLIENT)
+	public void registerBlockIcons(IIconRegister reg)
+	{
+		blockIcon = reg.registerIcon(Reference.MODID + ":incubator");
+		frontIcon = reg.registerIcon(Reference.MODID + "incubatorFront");
 	}
+	
+	@Override
+	@SideOnly(Side.CLIENT)
+	public IIcon getIcon(int side,int meta){
+		if (side == meta){
+			return incubatorFront;
+		} else {
+			return blockIcon }
 		}
 	}
 }
