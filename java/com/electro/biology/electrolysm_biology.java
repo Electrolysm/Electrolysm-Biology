@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 
 import com.electro.biology.bacteria.machines.Blockincubator;
 import com.electro.biology.handlers.Reference;
+import com.electro.biology.handlers.RegisterHelper;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -18,5 +19,7 @@ public class electrolysm_biology {
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		incubator = new Blockincubator().setBlockName("incubator"); 
+		
+		RegisterHelper.registerBlock(incubator);
 }
 }

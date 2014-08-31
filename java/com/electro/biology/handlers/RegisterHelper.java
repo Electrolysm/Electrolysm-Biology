@@ -5,7 +5,7 @@ import net.minecraft.block.Block;
 
 public class RegisterHelper {
 	
-	public void registerBlock (Block Block)
+	public static void registerBlock (Block Block)
 	{
 		GameRegistry.registerBlock(Block, Reference.MODID + "_" + Block.getUnlocalizedName().substring(5));
 	}
