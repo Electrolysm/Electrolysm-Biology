@@ -2,8 +2,11 @@ package com.electro.biology;
 
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 
-import com.electro.biology.bacteria.machines.Blockincubator;
+import com.electro.biology.bacteria.ItemAgar;
+import com.electro.biology.bacteria.ItemPetriDish;
+import com.electro.biology.bacteria.machines.incubator;
 import com.electro.biology.handlers.Reference;
 import com.electro.biology.handlers.RegisterHelper;
 import com.electro.biology.handlers.TabElectrolysm_Biology;
@@ -19,11 +22,21 @@ public class electrolysm_biology {
     //Bacteria Machines
 	public static Block incubator;
 	
+	//Bacteria
+	public static Item agar;
+	public static Item petriDish;
+	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		//Bacteria Machines
-		incubator = new Blockincubator().setBlockName("incubator"); 
+		incubator = new incubator().setBlockName("incubator"); 
 		RegisterHelper.registerBlock(incubator);
+		
+		//Bacteria 
+		agar = new ItemAgar();
+		RegisterHelper.registerItem(agar);
+		petriDish = new ItemPetriDish();
+		RegisterHelper.registerItem(petriDish);
 }
 }

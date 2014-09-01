@@ -18,9 +18,9 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-public class Blockincubator extends Block{
+public class incubator extends Block{
 	public IIcon frontIcon;
-	public Blockincubator()
+	public incubator()
 	{
 		super(Material.iron);
 		setCreativeTab(electrolysm_biology.TabElectrolysm_Biology);

@@ -1,1 +1,6 @@
+//Bacteria Machines
 tile.incubator.name=Incubator
+
+//Bacteria
+item.Agar.name=Agar
+item.PetriDish.name=Petri Dish

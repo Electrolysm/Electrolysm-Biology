@@ -23,10 +23,10 @@ public class TabElectrolysm_Biology extends CreativeTabs {
     @Override
     public ItemStack getIconItemStack()
     {
-        return new ItemStack(electrolysm_biology.incubator, 1, 1);
+        return new ItemStack(electrolysm_biology.petriDish, 1, 1);
     }
 
-    public Block getTabIconBlock() { return electrolysm_biology.incubator; }
+    public Item getTabIconBlock() { return electrolysm_biology.petriDish; }
 
 
     public String getTranslatedTabLabel()
