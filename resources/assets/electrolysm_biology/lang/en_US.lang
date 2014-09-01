@@ -1,5 +1,7 @@
 //Bacteria Machines
-tile.incubator.name=Incubator
+tile.incubator.name=Bacteria Incubator
+tile.harvester.name=Bacteria Harvester
+tile.breeder.name=Bacteria Breeder
 
 //Bacteria
 item.Agar.name=Agar

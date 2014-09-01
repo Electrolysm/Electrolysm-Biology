@@ -4,6 +4,8 @@ import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
+import com.electro.biology.bacteria.machines.breeder;
+import com.electro.biology.bacteria.machines.harvester;
 import com.electro.biology.bacteria.ItemAgar;
 import com.electro.biology.bacteria.ItemPetriDish;
 import com.electro.biology.bacteria.machines.incubator;
@@ -21,6 +23,8 @@ public class electrolysm_biology {
 	public static CreativeTabs TabElectrolysm_Biology = new TabElectrolysm_Biology(CreativeTabs.getNextID(),"Electrolysm | Biology");
     //Bacteria Machines
 	public static Block incubator;
+	public static Block harvester;
+	public static Block breeder;
 	
 	//Bacteria
 	public static Item agar;
@@ -32,6 +36,10 @@ public class electrolysm_biology {
 		//Bacteria Machines
 		incubator = new incubator().setBlockName("incubator"); 
 		RegisterHelper.registerBlock(incubator);
+		harvester = new harvester().setBlockName("harvester");
+		RegisterHelper.registerBlock(harvester);
+		breeder = new breeder().setBlockName("breeder");
+		RegisterHelper.registerBlock(breeder);
 		
 		//Bacteria 
 		agar = new ItemAgar();

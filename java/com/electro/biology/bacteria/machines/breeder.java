@@ -18,9 +18,9 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-public class incubator extends Block{
+public class breeder extends Block{
 	public IIcon frontIcon;
-	public incubator()
+	public breeder()
 	{
 		super(Material.iron);
 		setCreativeTab(electrolysm_biology.TabElectrolysm_Biology);
@@ -34,7 +34,7 @@ public class incubator extends Block{
 	public void registerBlockIcons(IIconRegister reg)
 	{
 		blockIcon = reg.registerIcon(Reference.MODID + ":machine");
-		frontIcon = reg.registerIcon(Reference.MODID + ":incubatorFront");
+		frontIcon = reg.registerIcon(Reference.MODID + ":breederFront");
 	}
 	
 	@Override
