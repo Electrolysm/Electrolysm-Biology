@@ -13,6 +13,15 @@ public class ModBlocks {
 	public static Block harvester;
 	public static Block breeder;
 	
+	//Bacteria Colonies
+	public static Block LactobacillusAcidophilus;
+	public static Block TobacillusAcidophilus;
+	public static Block Cyanocobalamin;
+	public static Block AcidophilusBifidus;
+	public static Block Streptomyces;
+	public static Block Rhizobium;
+	
+	
 public static void loadBlocks()
 {
 	//Bacteria Machines
