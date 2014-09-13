@@ -7,3 +7,12 @@ tile.breeder.name=Bacteria Breeder
 item.Agar.name=Agar
 item.PetriDish.name=Petri Dish
 item.sampler.name=Sampler
+
+//Bacteria Colonies
+tile.colonyGrass.name=Grass Colony
+tile.colonyTree.name=Leaf Colony
+tile.colonyIce.name=Ice Colony
+tile.colonyNether.name=Nether Colony
+tile.colonySwamp.name=Swamp Colony
+tile.colonyInfected.name=Infected Colony
+tile.colonyEnd.name=Ender Colony
