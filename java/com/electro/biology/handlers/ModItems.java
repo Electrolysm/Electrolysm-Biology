@@ -12,6 +12,12 @@ public class ModItems {
 	public static Item agar;
 	public static Item petriDish;
 	public static Item sampler;
+	
+	//Bacteria Samples
+	public static Item GrassSample;
+	public static Item TreeSample;
+	public static Item iceSample;
+	
 
 	
 	public static void loadItems()
