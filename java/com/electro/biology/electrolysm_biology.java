@@ -9,6 +9,7 @@ import com.electro.biology.bacteria.machines.harvester;
 import com.electro.biology.bacteria.ItemAgar;
 import com.electro.biology.bacteria.ItemPetriDish;
 import com.electro.biology.bacteria.machines.incubator;
+import com.electro.biology.handlers.ElectroBioWorld;
 import com.electro.biology.handlers.ModBlocks;
 import com.electro.biology.handlers.ModItems;
 import com.electro.biology.handlers.Reference;
@@ -30,5 +31,6 @@ public class electrolysm_biology {
 	{
 		ModBlocks.loadBlocks();
 		ModItems.loadItems();
+		ElectroBioWorld.mainRegistery();
 }
 }
