@@ -2,6 +2,7 @@ package com.electro.biology.handlers;
 
 import java.util.Random;
 
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -45,7 +46,7 @@ public class WorldGenElectroBio implements IWorldGenerator {
 			 int randPosY = getSurface(world, chunkX + rand.nextInt(16), chunkZ + rand.nextInt(16))+1;
 			 int randPosZ = chunkZ + rand.nextInt(16);
 			
-			(new WorldGenMinable(ModBlocks.colonyGrass, 1)).generate(world, rand, randPosX, randPosY, randPosZ);
+			 (new WorldGenMinable(ModBlocks.colonyGrass, 10, Blocks.air)).generate(world, rand, randPosX, randPosY, randPosZ);
 		}
 		
 	}

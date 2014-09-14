@@ -17,7 +17,8 @@ public class ModItems {
 	public static Item GrassSample;
 	public static Item TreeSample;
 	public static Item iceSample;
-	
+	public static Item netherSample;
+	public static Item swampSample;
 
 	
 	public static void loadItems()
