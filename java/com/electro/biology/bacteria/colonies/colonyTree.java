@@ -27,4 +27,9 @@ public class colonyTree extends Block{
 	 {
 		 return new ArrayList<ItemStack>();
 	 }
+	 @Override
+	 public boolean isOpaqueCube()
+	     {
+	         return false;
+	 }
 }
