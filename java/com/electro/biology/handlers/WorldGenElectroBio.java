@@ -41,12 +41,12 @@ public class WorldGenElectroBio implements IWorldGenerator {
         return height + 1;
     }
 	private void generateSurface(World world, Random rand, int chunkX, int chunkZ) {
-		for (int i = 0; i < 100; i++){
+		for (int i = 0; i < 1; i++){
 			int randPosX = chunkX + rand.nextInt(16);
 			 int randPosY = getSurface(world, chunkX + rand.nextInt(16), chunkZ + rand.nextInt(16))+1;
 			 int randPosZ = chunkZ + rand.nextInt(16);
 			
-			 (new WorldGenMinable(ModBlocks.colonyGrass, 10, Blocks.air)).generate(world, rand, randPosX, randPosY, randPosZ);
+			 (new WorldGenMinable(ModBlocks.colonyGrass, 10, Blocks.grass)).generate(world, rand, randPosX, randPosY, randPosZ);
 		}
 		
 	}

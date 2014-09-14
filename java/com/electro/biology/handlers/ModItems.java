@@ -19,6 +19,8 @@ public class ModItems {
 	public static Item iceSample;
 	public static Item netherSample;
 	public static Item swampSample;
+	public static Item InfectedSample;
+	public static Item EndSample;
 
 	
 	public static void loadItems()
