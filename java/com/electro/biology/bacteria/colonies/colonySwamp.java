@@ -20,10 +20,10 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
 public class colonySwamp extends Block{
-	public IIcon frontIcon;
 	public colonySwamp()
 	{
 		super(Material.cake);
+		setBlockName("colonySwamp");
 		setCreativeTab(electrolysm_biology.TabElectrolysm_Biology);
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setStepSound(soundTypeGrass);

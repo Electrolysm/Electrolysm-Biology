@@ -15,6 +15,7 @@ public class colonyTree extends Block{
 	public colonyTree()
 	{
 		super(Material.leaves);
+		setBlockName("colonyTree");
 		setCreativeTab(electrolysm_biology.TabElectrolysm_Biology);
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setStepSound(soundTypeGrass);

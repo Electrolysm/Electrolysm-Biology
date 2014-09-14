@@ -20,10 +20,10 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
 public class colonyIce extends Block{
-	public IIcon frontIcon;
 	public colonyIce()
 	{
 		super(Material.ice);
+		setBlockName("colonyIce");
 		setCreativeTab(electrolysm_biology.TabElectrolysm_Biology);
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setStepSound(soundTypeSnow);

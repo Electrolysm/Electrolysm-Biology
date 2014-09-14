@@ -20,10 +20,10 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
 public class colonyNether extends Block{
-	public IIcon frontIcon;
 	public colonyNether()
 	{
 		super(Material.cake);
+		setBlockName("colonyNether");
 		setCreativeTab(electrolysm_biology.TabElectrolysm_Biology);
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setStepSound(soundTypeStone);

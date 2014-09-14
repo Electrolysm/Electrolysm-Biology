@@ -20,10 +20,10 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
 public class colonyGrass extends Block{
-	public IIcon frontIcon;
 	public colonyGrass()
 	{
 		super(Material.cake);
+		setBlockName("colonyGrass");
 		setCreativeTab(electrolysm_biology.TabElectrolysm_Biology);
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setStepSound(soundTypeGrass);

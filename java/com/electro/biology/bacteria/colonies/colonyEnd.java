@@ -20,10 +20,10 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
 public class colonyEnd extends Block{
-	public IIcon frontIcon;
 	public colonyEnd()
 	{
 		super(Material.cake);
+		setBlockName("colonyEnd");
 		setCreativeTab(electrolysm_biology.TabElectrolysm_Biology);
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setStepSound(soundTypeStone);
