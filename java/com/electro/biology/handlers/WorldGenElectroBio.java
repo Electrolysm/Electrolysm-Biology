@@ -16,8 +16,6 @@ public class WorldGenElectroBio implements IWorldGenerator {
 			generateNether(world, rand, chunkX * 16, chunkZ * 16);
 		case 0:	
 			generateSurface(world, rand, chunkX * 16, chunkZ * 16);
-		case 1:
-			
 		}
 		
 	}
@@ -40,13 +38,14 @@ public class WorldGenElectroBio implements IWorldGenerator {
 
         return height + 1;
     }
-	private void generateSurface(World world, Random rand, int chunkX, int chunkZ) {
-		for (int i = 0; i < 1; i++){
-			int randPosX = chunkX + rand.nextInt(16);
-			 int randPosY = getSurface(world, chunkX + rand.nextInt(16), chunkZ + rand.nextInt(16))+1;
-			 int randPosZ = chunkZ + rand.nextInt(16);
-			
-			 (new WorldGenMinable(ModBlocks.colonyGrass, 10, Blocks.grass)).generate(world, rand, randPosX, randPosY, randPosZ);
+    private void generateSurface(World world, Random random, int chunkX, int chunkZ)
+    {
+        for (int i = 0; i < 0.01; i++)
+        {
+            int xCoord = chunkX + random.nextInt(16);
+            int yCoord = getSurface(world, chunkX + random.nextInt(16), chunkZ + random.nextInt(16));
+            int zCoord = chunkZ + random.nextInt(16);
+            (new WorldGenMinable(ModBlocks.colonyGrass, 3, Blocks.grass)).generate(world, random, xCoord, yCoord, zCoord);
 		}
 		
 	}
