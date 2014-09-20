@@ -6,8 +6,8 @@ import net.minecraft.item.Item;
 
 import com.electro.biology.bacteria.machines.breeder;
 import com.electro.biology.bacteria.machines.harvester;
-import com.electro.biology.bacteria.ItemAgar;
-import com.electro.biology.bacteria.ItemPetriDish;
+import com.electro.biology.bacteria.agar;
+import com.electro.biology.bacteria.petriDish;
 import com.electro.biology.bacteria.machines.incubator;
 import com.electro.biology.handlers.ElectroBioWorld;
 import com.electro.biology.handlers.ModBlocks;

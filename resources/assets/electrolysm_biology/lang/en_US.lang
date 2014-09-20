@@ -1,12 +1,9 @@
+//Blocks
+
 //Bacteria Machines
 tile.incubator.name=Bacteria Incubator
 tile.harvester.name=Bacteria Harvester
 tile.breeder.name=Bacteria Breeder
-
-//Bacteria
-item.Agar.name=Agar
-item.PetriDish.name=Petri Dish
-item.sampler.name=Sampler
 
 //Bacteria Colonies
 tile.colonyGrass.name=Grass Colony
@@ -16,3 +13,19 @@ tile.colonyNether.name=Nether Colony
 tile.colonySwamp.name=Swamp Colony
 tile.colonyInfected.name=Infected Colony
 tile.colonyEnd.name=Ender Colony
+
+//Items
+
+//Bacteria
+item.agar.name=Agar
+item.petriDish.name=Petri Dish
+item.sampler.name=Sampler
+
+//Bacteria Samples
+item.grassSample.name=Grass Colony Sample
+item.treeSample.name=Tree Colony Sample
+item.iceSample.name=Ice Colony Sample
+item.netherSample.name=Nether Colony Sample
+item.swampSample.name=Swamp Colony Sample
+item.infectedSample.name=Infected Colony Sample
+item.endSample.name=End Colony Sample
