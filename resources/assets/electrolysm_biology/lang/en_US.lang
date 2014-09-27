@@ -24,8 +24,9 @@ item.sampler.name=Sampler
 //Bacteria Samples
 item.grassSample.name=Grass Colony Sample
 item.treeSample.name=Tree Colony Sample
-item.iceSample.name=Ice Colony Sample
+item.iceSample.name=Snow Colony Sample
 item.netherSample.name=Nether Colony Sample
 item.swampSample.name=Swamp Colony Sample
 item.infectedSample.name=Infected Colony Sample
 item.endSample.name=End Colony Sample
+
