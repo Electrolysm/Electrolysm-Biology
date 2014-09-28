@@ -26,7 +26,7 @@ public class ModBlocks {
 	public static Block colonyIce;
 	public static Block colonyNether;
 	public static Block colonySwamp;
-	public static Block colonyInfected;
+	//public static Block colonyInfected;
 	public static Block colonyEnd;
 	
 	
@@ -51,8 +51,8 @@ public static void loadBlocks()
 	RegisterHelper.registerBlock(colonyNether);
 	colonySwamp = new colonySwamp().setBlockName("colonySwamp");
 	RegisterHelper.registerBlock(colonySwamp);
-	colonyInfected = new colonyInfected().setBlockName("colonyInfected");
-	RegisterHelper.registerBlock(colonyInfected);
+	//colonyInfected = new colonyInfected().setBlockName("colonyInfected");
+	//RegisterHelper.registerBlock(colonyInfected);
 	colonyEnd = new colonyEnd().setBlockName("colonyEnd");
 	RegisterHelper.registerBlock(colonyEnd);
 }

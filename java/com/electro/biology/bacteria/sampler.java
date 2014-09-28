@@ -45,12 +45,12 @@ public class sampler extends Item {
             player.inventory.setInventorySlotContents(1, new ItemStack(ModItems.iceSample));
             return true;
         }
-        if (world.getBlock(x, y, z) == ModBlocks.colonyInfected)
-        {
-            world.setBlockToAir(x, y, z);
-            player.inventory.setInventorySlotContents(1, new ItemStack(ModItems.infectedSample));
-            return true;
-        }
+        // if (world.getBlock(x, y, z) == ModBlocks.colonyInfected)
+     //   {
+       //     world.setBlockToAir(x, y, z);
+      //      player.inventory.setInventorySlotContents(1, new ItemStack(ModItems.infectedSample));
+      //      return true;
+     //   }
         if (world.getBlock(x, y, z) == ModBlocks.colonyNether)
         {
             world.setBlockToAir(x, y, z);

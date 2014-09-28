@@ -27,7 +27,7 @@ public class ModItems {
 	public static Item iceSample;
 	public static Item netherSample;
 	public static Item swampSample;
-	public static Item infectedSample;
+	//public static Item infectedSample;
 	public static Item endSample;
 
 	
@@ -52,8 +52,8 @@ public class ModItems {
 		RegisterHelper.registerItem(netherSample);
 		swampSample = new swampSample();
 		RegisterHelper.registerItem(swampSample);
-		infectedSample = new infectedSample();
-		RegisterHelper.registerItem(infectedSample);
+		//infectedSample = new infectedSample();
+		//RegisterHelper.registerItem(infectedSample);
 		endSample = new endSample();
 		RegisterHelper.registerItem(endSample);
 	}
