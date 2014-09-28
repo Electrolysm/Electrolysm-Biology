@@ -1,6 +1,7 @@
 package com.electro.biology.handlers;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 import com.electro.biology.bacteria.agar;
 import com.electro.biology.bacteria.petriDish;
