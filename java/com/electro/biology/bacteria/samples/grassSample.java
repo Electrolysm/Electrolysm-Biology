@@ -11,7 +11,7 @@ import com.electro.biology.handlers.Reference;
 
 public class grassSample extends Item {
 	
-  public grassSample() 
+	public grassSample() 
 	{
 		super();
 		setUnlocalizedName("grassSample");
@@ -27,5 +27,4 @@ public class grassSample extends Item {
 			list.add(new ItemStack(item, 1, i));
 		}
 	}
-
-	}
+}
