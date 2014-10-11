@@ -25,10 +25,44 @@ public class grassSample extends Item {
 	}
 @SideOnly(Side.CLIENT)
 public void addInformation(ItemStack stack, EntityPlayer Par2, List Par3, boolean Par4) {
-	if (stack.getItemDamage() == 0)Par3.add("Unidentified");
-	if (stack.getItemDamage() == 1)Par3.add("Growth rate: 1 "
-			+ "Productivity: 1");
-}
+	if (stack.getItemDamage() == 0){Par3.add("Unidentified");}
+	
+	if (stack.getItemDamage() == 1){
+		Par3.add("Growth rate: 1");
+		Par3.add("Productivity: 1"); }
+	
+    if (stack.getItemDamage() == 2){
+			Par3.add("Growth rate: 1");
+			Par3.add("Productivity: 2"); }
+    
+    if (stack.getItemDamage() == 3){
+			Par3.add("Growth rate: 1");
+			Par3.add("Productivity: 3"); }
+    
+    if (stack.getItemDamage() == 4){
+			Par3.add("Growth rate: 2");
+			Par3.add("Productivity: 1"); }
+    
+    if (stack.getItemDamage() == 5){
+			Par3.add("Growth rate: 2");
+			Par3.add("Productivity: 2"); }
+    
+    if (stack.getItemDamage() == 6){
+			Par3.add("Growth rate: 2");
+			Par3.add("Productivity: 3"); }
+    
+    if (stack.getItemDamage() == 7){
+			Par3.add("Growth rate: 3");
+			Par3.add("Productivity: 1"); }
+    
+    if (stack.getItemDamage() == 8){
+			Par3.add("Growth rate: 3");
+			Par3.add("Productivity: 2"); }
+    
+    if (stack.getItemDamage() == 9){
+			Par3.add("Growth rate: 3");
+			Par3.add("Productivity: 3"); }
+	}
 
 public String getItemStackDisplayName(ItemStack stack)
 {
@@ -37,7 +71,7 @@ public String getItemStackDisplayName(ItemStack stack)
 
     @Override
 	public void getSubItems(Item item, CreativeTabs tab, List list) {
-		for (int i = 0; i < 9; i ++) {
+		for (int i = 0; i < 10; i ++) {
 			list.add(new ItemStack(item, 1, i)); 
 		}
     }

@@ -13,6 +13,12 @@ import com.electro.biology.bacteria.samples.infectedSample;
 import com.electro.biology.bacteria.samples.netherSample;
 import com.electro.biology.bacteria.samples.swampSample;
 import com.electro.biology.bacteria.samples.treeSample;
+import com.electro.biology.pertiDIshes.endPetri;
+import com.electro.biology.pertiDIshes.grassPetri;
+import com.electro.biology.pertiDIshes.icePetri;
+import com.electro.biology.pertiDIshes.netherPetri;
+import com.electro.biology.pertiDIshes.swampPetri;
+import com.electro.biology.pertiDIshes.treePetri;
 
 public class ModItems {
 	
@@ -29,7 +35,14 @@ public class ModItems {
 	public static Item swampSample;
 	//public static Item infectedSample;
 	public static Item endSample;
-
+	
+//Bacteria perti dish's
+	public static Item grassPetri;
+	public static Item treePetri;
+	public static Item icePetri;
+	public static Item netherPetri;
+	public static Item swampPetri;
+	public static Item endPetri;
 	
 	public static void loadItems()
 	{
@@ -56,6 +69,21 @@ public class ModItems {
 		//RegisterHelper.registerItem(infectedSample);
 		endSample = new endSample();
 		RegisterHelper.registerItem(endSample);
+		
+		//Bacteria perti dish's
+		grassPetri = new grassPetri();
+		RegisterHelper.registerItem(grassPetri);
+		treePetri = new treePetri();
+		RegisterHelper.registerItem(treePetri);
+		icePetri = new icePetri();
+		RegisterHelper.registerItem(icePetri);
+		netherPetri = new netherPetri();
+		RegisterHelper.registerItem(netherPetri);
+		swampPetri = new swampPetri();
+		RegisterHelper.registerItem(swampPetri);
+		endPetri = new endPetri();
+		RegisterHelper.registerItem(endPetri);
+		
 	}
 
 }
