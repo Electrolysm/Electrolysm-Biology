@@ -1,4 +1,4 @@
-package com.electro.biology.pertiDIshes;
+package com.electro.biology.bacteria.pertiDIshes;
 
 
 import java.util.List;

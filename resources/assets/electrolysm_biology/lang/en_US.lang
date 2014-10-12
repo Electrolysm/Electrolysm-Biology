@@ -4,6 +4,7 @@
 tile.incubator.name=Bacteria Incubator
 tile.harvester.name=Bacteria Harvester
 tile.breeder.name=Bacteria Breeder
+tile.identifier.name=Bacterial Identifier
 
 //Bacteria Colonies
 tile.colonyGrass.name=Grass Colony

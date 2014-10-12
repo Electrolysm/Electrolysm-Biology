@@ -6,6 +6,12 @@ import net.minecraft.item.ItemStack;
 import com.electro.biology.bacteria.agar;
 import com.electro.biology.bacteria.petriDish;
 import com.electro.biology.bacteria.sampler;
+import com.electro.biology.bacteria.pertiDIshes.endPetri;
+import com.electro.biology.bacteria.pertiDIshes.grassPetri;
+import com.electro.biology.bacteria.pertiDIshes.icePetri;
+import com.electro.biology.bacteria.pertiDIshes.netherPetri;
+import com.electro.biology.bacteria.pertiDIshes.swampPetri;
+import com.electro.biology.bacteria.pertiDIshes.treePetri;
 import com.electro.biology.bacteria.samples.endSample;
 import com.electro.biology.bacteria.samples.grassSample;
 import com.electro.biology.bacteria.samples.iceSample;
@@ -13,12 +19,6 @@ import com.electro.biology.bacteria.samples.infectedSample;
 import com.electro.biology.bacteria.samples.netherSample;
 import com.electro.biology.bacteria.samples.swampSample;
 import com.electro.biology.bacteria.samples.treeSample;
-import com.electro.biology.pertiDIshes.endPetri;
-import com.electro.biology.pertiDIshes.grassPetri;
-import com.electro.biology.pertiDIshes.icePetri;
-import com.electro.biology.pertiDIshes.netherPetri;
-import com.electro.biology.pertiDIshes.swampPetri;
-import com.electro.biology.pertiDIshes.treePetri;
 
 public class ModItems {
 	

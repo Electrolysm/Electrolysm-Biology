@@ -1,4 +1,4 @@
-package com.electro.biology.pertiDIshes;
+package com.electro.biology.bacteria.pertiDIshes;
 
 
 import java.util.List;
@@ -15,12 +15,12 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 
-public class treePetri extends Item {
+public class swampPetri extends Item {
 	
-	public treePetri()
+	public swampPetri()
 	{
 		super();
-		setUnlocalizedName("treePetri");
+		setUnlocalizedName("swampPetri");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(electrolysm_biology.TabElectrolysm_Biology);
 	}

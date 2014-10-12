@@ -11,6 +11,7 @@ import com.electro.biology.bacteria.colonies.colonySwamp;
 import com.electro.biology.bacteria.colonies.colonyTree;
 import com.electro.biology.bacteria.machines.breeder;
 import com.electro.biology.bacteria.machines.harvester;
+import com.electro.biology.bacteria.machines.identifier;
 import com.electro.biology.bacteria.machines.incubator;
 
 public class ModBlocks {
@@ -19,6 +20,7 @@ public class ModBlocks {
 	public static Block incubator;
 	public static Block harvester;
 	public static Block breeder;
+	public static Block identifier;
 	
 	//Bacteria Colonies
 	public static Block colonyGrass;
@@ -39,6 +41,8 @@ public static void loadBlocks()
 	RegisterHelper.registerBlock(harvester);
 	breeder = new breeder().setBlockName("breeder");
 	RegisterHelper.registerBlock(breeder);
+	identifier = new identifier().setBlockName("identifier");
+	RegisterHelper.registerBlock(identifier);
 	
 	//Bacteria Colonies
 	colonyGrass = new colonyGrass().setBlockName("colonyGrass");
