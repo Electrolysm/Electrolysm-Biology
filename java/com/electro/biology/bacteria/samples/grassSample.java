@@ -23,6 +23,7 @@ public class grassSample extends Item {
 		setCreativeTab(electrolysm_biology.TabElectrolysm_Biology);
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 	}
+		
 @SideOnly(Side.CLIENT)
 public void addInformation(ItemStack stack, EntityPlayer Par2, List Par3, boolean Par4) {
 	if (stack.getItemDamage() == 0){Par3.add("Unidentified");}
