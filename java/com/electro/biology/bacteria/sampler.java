@@ -25,46 +25,54 @@ public class sampler extends Item {
 		setCreativeTab(electrolysm_biology.TabElectrolysm_Biology);
 	}
 
+    public void giveItem(EntityPlayer player, Item item) {
+        if (player.inventory.getFirstEmptyStack() != (-1)) {
+            player.inventory.addItemStackToInventory(new ItemStack(item));
+        } else {
+            player.dropPlayerItemWithRandomChoice(new ItemStack(item), false);
+        }
+    }
+
     public boolean onItemUse(ItemStack stack, EntityPlayer player, World world, int x, int y, int z, int par7, float par8, float par9, float par10)
     {
         if (world.getBlock(x, y, z) == ModBlocks.colonyGrass)
         {
             world.setBlockToAir(x, y, z);
-            player.inventory.addItemStackToInventory(new ItemStack(ModItems.grassSample));
+            this.giveItem(player, ModItems.grassSample);
             return true;
         }
         if (world.getBlock(x, y, z) == ModBlocks.colonyEnd)
-        {;
+        {
             world.setBlockToAir(x, y, z);
-            player.inventory.addItemStackToInventory(new ItemStack(ModItems.endSample));
+            this.giveItem(player, ModItems.endSample);
             return true;
         }
         if (world.getBlock(x, y, z) == ModBlocks.colonyIce)
         {
             world.setBlockToAir(x, y, z);
-            player.inventory.addItemStackToInventory(new ItemStack(ModItems.iceSample));
+            this.giveItem(player, ModItems.iceSample);
             return true;
         }
         // if (world.getBlock(x, y, z) == ModBlocks.colonyInfected)
      //   {
        //     world.setBlockToAir(x, y, z);
-      //      player.inventory.addItemStackToInventory(new ItemStack(ModItems.infectedSample));
+      //      this.giveItem(player, ModItems.infectedSample);
       //      return true;
      //   }
         if (world.getBlock(x, y, z) == ModBlocks.colonyNether)
         {
             world.setBlockToAir(x, y, z);
-            player.inventory.addItemStackToInventory(new ItemStack(ModItems.netherSample));
+            this.giveItem(player, ModItems.netherSample);
             return true;
         }  if (world.getBlock(x, y, z) == ModBlocks.colonySwamp)
         {
             world.setBlockToAir(x, y, z);
-            player.inventory.addItemStackToInventory(new ItemStack(ModItems.swampSample));
+            this.giveItem(player, ModItems.swampSample);
             return true;
         }  if (world.getBlock(x, y, z) == ModBlocks.colonyTree)
         {
             world.setBlockToAir(x, y, z);
-            player.inventory.addItemStackToInventory(new ItemStack(ModItems.treeSample));
+            this.giveItem(player, ModItems.treeSample);
             return true;
         }
         return false;
