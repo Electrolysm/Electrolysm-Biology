@@ -12,12 +12,14 @@ import com.electro.biology.bacteria.machines.incubator;
 import com.electro.biology.handlers.ElectroBioWorld;
 import com.electro.biology.handlers.ModBlocks;
 import com.electro.biology.handlers.ModItems;
+import com.electro.biology.handlers.ModRecipes;
 import com.electro.biology.handlers.Reference;
 import com.electro.biology.handlers.RegisterHelper;
 import com.electro.biology.handlers.TabElectrolysm_Biology;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -32,5 +34,10 @@ public class electrolysm_biology {
 		ModBlocks.loadBlocks();
 		ModItems.loadItems();
 		ElectroBioWorld.mainRegistery();
+}
+	  @EventHandler
+	    public void init(FMLInitializationEvent event)
+	    {
+		  ModRecipes.addCrafting();
 }
 }

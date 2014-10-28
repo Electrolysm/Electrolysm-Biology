@@ -14,6 +14,7 @@ tile.colonyNether.name=Nether Colony
 tile.colonySwamp.name=Swamp Colony
 tile.colonyInfected.name=Infected Colony
 tile.colonyEnd.name=Ender Colony
+tile.algae.name=Algae
 
 //Items
 

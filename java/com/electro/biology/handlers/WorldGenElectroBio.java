@@ -79,6 +79,15 @@ public class WorldGenElectroBio implements IWorldGenerator {
                     (new WorldGenMinable(ModBlocks.colonyIce, 3, Blocks.snow_layer)).generate(world, random, xCoord, yCoord, zCoord);
 
                 }
+	if(world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.swampland){
+    for (int i = 0; i < 5; i++)
+    {
+        int xCoord = chunkX + random.nextInt(16);
+        int yCoord = getSurface(world, chunkX + random.nextInt(16), chunkZ + random.nextInt(16));
+        int zCoord = chunkZ + random.nextInt(16);
+        (new WorldGenMinable(ModBlocks.algae, 3, Blocks.waterlily)).generate(world, random, xCoord, yCoord, zCoord);
+    }
+	}
     }
 
 	private void generateNether(World world, Random random, int chunkX, int chunkZ) {

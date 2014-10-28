@@ -1,6 +1,7 @@
 package com.electro.biology.bacteria.machines;
 
 import java.util.List;
+import java.util.Random;
 
 import com.electro.biology.electrolysm_biology;
 import com.electro.biology.handlers.Reference;

@@ -2,6 +2,7 @@ package com.electro.biology.handlers;
 
 import net.minecraft.block.Block;
 
+import com.electro.biology.bacteria.colonies.algae;
 import com.electro.biology.bacteria.colonies.colonyEnd;
 import com.electro.biology.bacteria.colonies.colonyGrass;
 import com.electro.biology.bacteria.colonies.colonyIce;
@@ -30,6 +31,7 @@ public class ModBlocks {
 	public static Block colonySwamp;
 	//public static Block colonyInfected;
 	public static Block colonyEnd;
+	public static Block algae;
 	
 	
 public static void loadBlocks()
@@ -59,6 +61,8 @@ public static void loadBlocks()
 	//RegisterHelper.registerBlock(colonyInfected);
 	colonyEnd = new colonyEnd().setBlockName("colonyEnd");
 	RegisterHelper.registerBlock(colonyEnd);
+	algae = new algae().setBlockName("algae");
+	RegisterHelper.registerBlock(algae);
 }
 
 }

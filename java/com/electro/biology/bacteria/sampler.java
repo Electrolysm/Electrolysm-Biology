@@ -48,7 +48,7 @@ public class sampler extends Item {
         // if (world.getBlock(x, y, z) == ModBlocks.colonyInfected)
      //   {
        //     world.setBlockToAir(x, y, z);
-      //      player.inventory.addItemStackToInventory(new ItemStack(ModItems.grassSample));
+      //      player.inventory.addItemStackToInventory(new ItemStack(ModItems.infectedSample));
       //      return true;
      //   }
         if (world.getBlock(x, y, z) == ModBlocks.colonyNether)
