@@ -44,12 +44,4 @@ public class electrolysm_biology {
 	    {
 		  ModRecipes.addCrafting();
 }
-
-    @SubscribeEvent
-    public void clientTick(TickEvent.ClientTickEvent event){
-        System.out.println("tick");
-        if(FMLClientHandler.instance().getClient().inGameHasFocus) {
-            UpdateHandler.update();
-        }
-    }
 }
