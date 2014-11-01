@@ -1,7 +1,6 @@
 package com.electro.biology;
 
 import com.electro.biology.handlers.*;
-
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -20,19 +19,17 @@ import com.electro.biology.bacteria.machines.incubator;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.PlayerUseItemEvent;
 
-
-@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION, dependencies = "required-after:Electrolysm@1.2.42")
 public class electrolysm_biology {
 	
 	public static CreativeTabs TabElectrolysm_Biology = new TabElectrolysm_Biology(CreativeTabs.getNextID(),"Electrolysm | Biology");
-	 
+	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
@@ -47,10 +44,4 @@ public class electrolysm_biology {
 	    {
 		  ModRecipes.addCrafting();
 }
-
-    @SubscribeEvent
-    public void clientTick(TickEvent.ClientTickEvent event){
-        if(FMLClientHandler.instance().getClient().inGameHasFocus) {
-        }
-    }
 }
