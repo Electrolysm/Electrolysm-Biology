@@ -4,22 +4,25 @@ import java.util.List;
 import java.util.Random;
 
 import com.electro.biology.electrolysm_biology;
+import com.electro.biology.bacteria.machines.tile.TileEntityIdentifier;
 import com.electro.biology.handlers.Reference;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-public class identifier extends Block{
+public class identifier extends BlockContainer{
 	public IIcon frontIcon;
 	public identifier()
 	{
@@ -120,5 +123,11 @@ public class identifier extends Block{
             par1World.setBlockMetadataWithNotify(par2, par3, par4, 4, 2);
         }
     }
+
+	@Override
+	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
+		// TODO Auto-generated method stub
+		return new TileEntityIdentifier();
+	}
 }
 
