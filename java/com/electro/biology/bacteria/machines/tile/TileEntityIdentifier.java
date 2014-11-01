@@ -8,7 +8,7 @@ public class TileEntityIdentifier extends TileEntityMachine {
 	@Override 
 	public void updateEntity(){
 		super.updateEntity();
-		if(worldObj.isRemote == true){
+		if(worldObj.isRemote){
 			return;
 		}
 	}
