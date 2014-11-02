@@ -17,12 +17,12 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
 		super.updateEntity();
 		if(worldObj.isRemote){
 			return;
+		
 		}
-		public abstract  class TileEntityInventory extends TileEntity implements IInventory//, ISidedInventory
-		{
+	}
 		    public ItemStack[] inventory;
 
-		    public TileEntityInventory(int invSize){
+		    public TileEntityIdentifier(int invSize){
 		        super();
 		        inventory = new ItemStack[invSize];
 		    }
@@ -102,7 +102,9 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
 		    }
 
 		    @Override
-		    public abstract boolean isItemValidForSlot(int slot, ItemStack stack);
+		    public boolean isItemValidForSlot(int slot, ItemStack stack) {
+				return false;
+			}
 
 		    @Override
 		    public void updateEntity(){ super.updateEntity(); }
