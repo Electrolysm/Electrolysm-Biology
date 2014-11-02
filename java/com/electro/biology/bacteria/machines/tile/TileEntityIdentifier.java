@@ -181,10 +181,12 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
 		    public boolean hasCustomInventoryName() { return true; }
 
 		    @Override
-		    public abstract String getInventoryName();
+		    public String getInventoryName() {
+				return null;
+			}
 
 		    @Override
 		    public void openInventory() { }
-		}
+		    {
 	}
 }
