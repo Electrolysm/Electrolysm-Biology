@@ -1,6 +1,7 @@
 package com.electro.biology;
 
 import com.electro.biology.handlers.*;
+
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -43,5 +44,6 @@ public class electrolysm_biology {
 	    public void init(FMLInitializationEvent event)
 	    {
 		  ModRecipes.addCrafting();
+		  ModMapping.addMapping();
 }
 }
