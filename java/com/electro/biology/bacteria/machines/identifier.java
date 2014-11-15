@@ -5,6 +5,7 @@ import java.util.Random;
 
 import com.electro.biology.electrolysm_biology;
 import com.electro.biology.bacteria.machines.tile.TileEntityIdentifier;
+import com.electro.biology.handlers.GUIHander;
 import com.electro.biology.handlers.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -15,6 +16,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -129,5 +131,15 @@ public class identifier extends BlockContainer{
 		// TODO Auto-generated method stub
 		return new TileEntityIdentifier(2);
 	}
+	
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, 
+    		int side, float xSide, float ySide, float zSide){
+    	if(!player.isSneaking()){
+    		player.openGui(electrolysm_biology.GUIInstance, GUIHander.IdentifierID, world, x, y, z);
+    		return true;
+    	}
+    	return false;
+    }
+
 }
 

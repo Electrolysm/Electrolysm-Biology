@@ -20,8 +20,10 @@ import com.electro.biology.bacteria.machines.incubator;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.PlayerUseItemEvent;
@@ -31,6 +33,9 @@ public class electrolysm_biology {
 	
 	public static CreativeTabs TabElectrolysm_Biology = new TabElectrolysm_Biology(CreativeTabs.getNextID(),"Electrolysm | Biology");
 	
+	@Instance(Reference.MODID)
+	public static electrolysm_biology GUIInstance;
+	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
@@ -38,12 +43,13 @@ public class electrolysm_biology {
 		ModItems.loadItems();
 		ElectroBioWorld.mainRegistery();
         FMLCommonHandler.instance().bus().register(new electrolysm_biology());
-
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GUIHander());
     }
 	  @EventHandler
 	    public void init(FMLInitializationEvent event)
 	    {
 		  ModRecipes.addCrafting();
 		  ModMapping.addMapping();
+		  
 }
 }
