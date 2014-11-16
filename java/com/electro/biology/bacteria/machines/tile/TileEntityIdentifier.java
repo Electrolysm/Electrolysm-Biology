@@ -1,5 +1,7 @@
 package com.electro.biology.bacteria.machines.tile;
 
+import com.electro.biology.bacteria.machines.Recpies.IdentifierRecipes;
+
 import electrolysm.api.powerSystem.prefab.TileEntityMachine;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
@@ -10,7 +12,9 @@ import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityIdentifier extends TileEntityMachine implements IInventory {
 
-
+	 public int timer = 0;
+	 public int maxTimer = 10 * 20;
+	
     @Override
     public void updateEntity() {
         super.updateEntity();
@@ -18,6 +22,11 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
             return;
 
         }
+        
+        ItemStack input = this.getStackInSlot(0);
+        ItemStack result = IdentifierRecipes.id().getResult(input);
+          
+   
     }
 
     public ItemStack[] inventory;
