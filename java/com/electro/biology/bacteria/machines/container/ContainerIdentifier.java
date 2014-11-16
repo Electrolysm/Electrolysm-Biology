@@ -32,5 +32,11 @@ public class ContainerIdentifier extends Container {
 		return true;
 																																						
 	}
+	
+	  @Override
+    public ItemStack transferStackInSlot(EntityPlayer par1EntityPlayer, int par2)
+    {
+        return null;
+    }
 
 }
