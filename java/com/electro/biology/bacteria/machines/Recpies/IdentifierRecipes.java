@@ -41,9 +41,12 @@ public class IdentifierRecipes {
 			return null;
 		}
 		List<RecipeStack> outputs = this.map.get(new RecipeStack(input));
-		int randomInt = random.nextInt(outputs.size());
-		if(outputs!=null && outputs.get(randomInt) != null){
-			return outputs.get(randomInt).getStackValue();
+		if(outputs != null)
+		{
+			int randomInt = random.nextInt(outputs.size());
+			if(outputs.get(randomInt) != null){
+				return outputs.get(randomInt).getStackValue();
+			}
 		}
 		return null;
 	}
