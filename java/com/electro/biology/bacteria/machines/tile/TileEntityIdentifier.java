@@ -38,7 +38,7 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
         		  	int out= this.getStackInSlot(1).stackSize;
         			if (out + result.stackSize <= 64 && result.isItemEqual(this.getStackInSlot(1))){
         				this.setInventorySlotContents(1, new ItemStack(result.getItem(), out + result.stackSize,
-        				result.getItemDamage());
+        				result.getItemDamage()));
 					this.decrStackSize(0, 1);
 				}
         		  }
@@ -124,7 +124,7 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
 
     @Override
     public boolean isItemValidForSlot(int slot, ItemStack stack) {
-        return false;
+        return true;
     }
 
     int[] slots_bottom;
@@ -190,7 +190,7 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
 
     @Override
     public String getInventoryName() {
-        return null;
+        return "Identifier";
     }
 
     @Override
