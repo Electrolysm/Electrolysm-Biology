@@ -1,5 +1,7 @@
 package com.electro.biology.bacteria.machines.tile;
 
+import java.util.Random;
+
 import com.electro.biology.bacteria.machines.Recpies.IdentifierRecipes;
 
 import electrolysm.api.powerSystem.prefab.TileEntityMachine;
@@ -24,8 +26,22 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
         }
         
         ItemStack input = this.getStackInSlot(0);
-        ItemStack result = IdentifierRecipes.id().getResult(input);
-          
+        ItemStack result = IdentifierRecipes.id().getResult(input, new Random());
+          if(input!= null ){
+        	  if (timer == maxTimer){
+        		  if(this.getStackInSlot(1)== null){
+        			  this.setInventorySlotContents(1, result);
+        			  this.decrStackSize(0, 1);
+        		  }
+        		  else{
+        			  int out= this.getStackInSlot(1).stackSize;{
+        				  if (out + result.stackSize <= 64){
+        					  
+        				  }
+        			  }
+        		  }
+        	  }
+          }
    
     }
 
