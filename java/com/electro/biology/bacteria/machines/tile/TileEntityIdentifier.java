@@ -29,18 +29,26 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
         ItemStack result = IdentifierRecipes.id().getResult(input, new Random());
           if(input!= null ){
         	  if (timer == maxTimer){
-        		  if(this.getStackInSlot(1)== null){
+        	  	timer = 0;
+        		  if(this.getStackInSlot(1) == null){
         			  this.setInventorySlotContents(1, result);
         			  this.decrStackSize(0, 1);
         		  }
         		  else{
-        			  int out= this.getStackInSlot(1).stackSize;{
-        				  if (out + result.stackSize <= 64){
-        					  
-        				  }
-        			  }
+        		  	int out= this.getStackInSlot(1).stackSize;
+        			if (out + result.stackSize <= 64 && result.isItemEqual(this.getStackInSlot(1))){
+        				this.setInventorySlotContents(1, new ItemStack(result.getItem(), out + result.stackSize,
+        				result.getItemDamage());
+					this.decrStackSize(0, 1);
+				}
         		  }
         	  }
+        	  else{
+        	  	timer++;
+        	  }
+          }
+          else{
+          	timer = 0;
           }
    
     }
