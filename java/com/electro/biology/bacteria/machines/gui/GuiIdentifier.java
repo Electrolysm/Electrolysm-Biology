@@ -27,8 +27,8 @@ public class GuiIdentifier extends GuiContainer {
 		int x = (this.width - this.xSize)/2;
 		int y = (this.height - this.ySize)/2;
 		this.drawTexturedModalRect(x, y, 0, 0, this.xSize, this.ySize);
-        int progress = ((int)((entity.timer * 46) / entity.maxTimer));
-        this.drawTexturedModalRect(x + 28, y + 27, 4, 172, progress + 1, 46);
+        int progress = ((int)((entity.timer * 117) / entity.maxTimer));
+        this.drawTexturedModalRect(x + 27, y + 27, 4, 172, progress , 46);
 }
 
 }
