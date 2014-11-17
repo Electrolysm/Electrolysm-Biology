@@ -30,6 +30,7 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
           if(input!= null && result != null){
         	  if (timer == maxTimer){
         	  	timer = 0;
+        	  	worldObj.markBlockForUpdate(xCoord, yCoord, zCoord)
         		  if(this.getStackInSlot(1) == null){
         			  this.setInventorySlotContents(1, result);
         			  this.decrStackSize(0, 1);
@@ -45,10 +46,13 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
         	  }
         	  else{
         	  	timer++;
+        	  	worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
         	  }
           }
           else{
           	timer = 0;
+          	worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
+
           }
    
     }
@@ -195,5 +199,17 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
 
     @Override
     public void openInventory() {
+    }
+    
+    @Override
+    public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity pkt) {
+        timer = pkt.func_148857_g().getInteger("timer");
+    }
+
+    @Override
+    public Packet getDescriptionPacket() {
+        NBTTagCompound tag = new NBTTagCompound();
+        tag.setInteger("timer", timer);
+        return new S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 0, tag);
     }
 }
