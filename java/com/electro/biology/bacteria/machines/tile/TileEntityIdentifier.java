@@ -10,6 +10,9 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
+import net.minecraft.network.NetworkManager;
+import net.minecraft.network.Packet;
+import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityIdentifier extends TileEntityMachine implements IInventory {
@@ -30,7 +33,7 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
           if(input!= null && result != null){
         	  if (timer == maxTimer){
         	  	timer = 0;
-        	  	worldObj.markBlockForUpdate(xCoord, yCoord, zCoord)
+        	  	worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
         		  if(this.getStackInSlot(1) == null){
         			  this.setInventorySlotContents(1, result);
         			  this.decrStackSize(0, 1);
