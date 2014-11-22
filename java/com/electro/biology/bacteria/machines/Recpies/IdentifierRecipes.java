@@ -57,8 +57,15 @@ public class IdentifierRecipes {
 				new ItemStack(ModItems.treeSample, 1, 3), new ItemStack(ModItems.treeSample, 1, 4), new ItemStack(ModItems.treeSample, 1, 5),
 				new ItemStack(ModItems.treeSample, 1, 6), new ItemStack(ModItems.treeSample, 1, 7), new ItemStack(ModItems.treeSample, 1, 8),
 				new ItemStack(ModItems.treeSample, 1, 9));
-		this.addRecipe(new ItemStack(ModItems.treeSample, 1, 0), recipeList6);
+		this.addRecipe(new ItemStack(ModItems.treeSample, 1, 0), recipeList6);	
+		
+		List<ItemStack> recipeList7 = Arrays.asList(new ItemStack(ModItems.algaeSample, 1, 1), new ItemStack(ModItems.algaeSample, 1, 2), 
+				new ItemStack(ModItems.algaeSample, 1, 3), new ItemStack(ModItems.algaeSample, 1, 4), new ItemStack(ModItems.algaeSample, 1, 5),
+				new ItemStack(ModItems.algaeSample, 1, 6), new ItemStack(ModItems.algaeSample, 1, 7), new ItemStack(ModItems.algaeSample, 1, 8),
+				new ItemStack(ModItems.algaeSample, 1, 9));
+		this.addRecipe(new ItemStack(ModItems.algaeSample, 1, 0), recipeList7);
 	}
+	
 	public void addRecipe(ItemStack input, List<ItemStack> outputs) {
 		List<RecipeStack> list = new ArrayList<RecipeStack>();
 		for(int i = 0; i < outputs.size(); i++){

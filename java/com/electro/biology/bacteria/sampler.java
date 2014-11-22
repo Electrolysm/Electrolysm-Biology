@@ -75,7 +75,15 @@ public class sampler extends Item {
             this.giveItem(player, ModItems.treeSample);
             return true;
         }
+            if (world.getBlock(x, y, z) == ModBlocks.algae)
+            {
+                world.setBlockToAir(x, y, z);
+                this.giveItem(player, ModItems.algaeSample);
+                return true;
+            }
+            {
         return false;
     }
 
+}
 }

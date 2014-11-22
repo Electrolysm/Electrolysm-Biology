@@ -6,12 +6,14 @@ import net.minecraft.item.ItemStack;
 import com.electro.biology.bacteria.agar;
 import com.electro.biology.bacteria.petriDish;
 import com.electro.biology.bacteria.sampler;
+import com.electro.biology.bacteria.pertiDIshes.algaePetri;
 import com.electro.biology.bacteria.pertiDIshes.endPetri;
 import com.electro.biology.bacteria.pertiDIshes.grassPetri;
 import com.electro.biology.bacteria.pertiDIshes.icePetri;
 import com.electro.biology.bacteria.pertiDIshes.netherPetri;
 import com.electro.biology.bacteria.pertiDIshes.swampPetri;
 import com.electro.biology.bacteria.pertiDIshes.treePetri;
+import com.electro.biology.bacteria.samples.algaeSample;
 import com.electro.biology.bacteria.samples.endSample;
 import com.electro.biology.bacteria.samples.grassSample;
 import com.electro.biology.bacteria.samples.iceSample;
@@ -35,14 +37,16 @@ public class ModItems {
 	public static Item swampSample;
 	//public static Item infectedSample;
 	public static Item endSample;
+	public static Item algaeSample;
 	
-//Bacteria perti dish's
+	//Bacteria perti dish's
 	public static Item grassPetri;
 	public static Item treePetri;
 	public static Item icePetri;
 	public static Item netherPetri;
 	public static Item swampPetri;
 	public static Item endPetri;
+	public static Item algaePetri;
 	
 	public static void loadItems()
 	{
@@ -69,6 +73,8 @@ public class ModItems {
 		//RegisterHelper.registerItem(infectedSample);
 		endSample = new endSample();
 		RegisterHelper.registerItem(endSample);
+		algaeSample = new algaeSample();
+		RegisterHelper.registerItem(algaeSample);
 		
 		//Bacteria perti dish's
 		grassPetri = new grassPetri();
@@ -83,6 +89,8 @@ public class ModItems {
 		RegisterHelper.registerItem(swampPetri);
 		endPetri = new endPetri();
 		RegisterHelper.registerItem(endPetri);
+		algaePetri = new algaePetri();
+		RegisterHelper.registerItem(algaePetri);
 		
 	}
 

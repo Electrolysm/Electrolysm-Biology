@@ -31,6 +31,7 @@ item.netherSample.name=Nether Colony Sample
 item.swampSample.name=Swamp Colony Sample
 item.infectedSample.name=Infected Colony Sample
 item.endSample.name=End Colony Sample
+item.algaeSample.name=Algae Sample
 
 //Bacteria Petri Dishes 
 item.endPetri.name=Ender Bacteria
@@ -39,3 +40,4 @@ item.icePetri.name=Ice Bacteria
 item.netherPetri.name=Nether Bacteria
 item.swampPetri.name=Swamp Bacteria
 item.treePetri.name=Tree Bacteria
+item.algaePetri.name=Algae

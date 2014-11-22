@@ -30,8 +30,8 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
         
         ItemStack input = this.getStackInSlot(0);
         ItemStack result = IdentifierRecipes.id().getResult(input, new Random());
-          if(input!= null && result != null){
-        	  if (timer == maxTimer){
+          if(input!= null && result != null && this.canWork(20)){
+        	  if (timer == maxTimer ){
         	  	timer = 0;
         	  	worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
         		  if(this.getStackInSlot(1) == null){
@@ -49,6 +49,7 @@ public class TileEntityIdentifier extends TileEntityMachine implements IInventor
         	  }
         	  else{
         	  	timer++;
+        	  	this.work(20);
         	  	worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
         	  }
           }
