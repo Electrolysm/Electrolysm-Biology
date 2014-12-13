@@ -14,8 +14,8 @@ public class Containerincubator extends Container {
 
 	public Containerincubator(TileEntityincubator te, InventoryPlayer inv) {
 		this.entity = te;
-		this.addSlotToContainer(new Slot(te,0,8,35));
-		this.addSlotToContainer(new Slot(te,1,151,35));
+		this.addSlotToContainer(new Slot(te,0,33,35));
+		this.addSlotToContainer(new Slot(te,1,129,36));
 		
 		for(int x = 0; x < 3; x++){
 			for(int y =0; y < 9; y++){
