@@ -27,7 +27,7 @@ public class GUIincubator extends GuiContainer {
 		int x = (this.width - this.xSize)/2;
 		int y = (this.height - this.ySize)/2;
 		this.drawTexturedModalRect(x, y, 0, 0, this.xSize, this.ySize);
-        int progress = ((int)((entity.timer * 54) / entity.maxTimer));
+        int progress = ((int)((entity.timer * 60) / entity.maxTimer));
         this.drawTexturedModalRect(x + 70, y + 18, 188, 10, progress , 60);
 }
 

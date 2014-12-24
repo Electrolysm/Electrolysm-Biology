@@ -129,7 +129,7 @@ public class incubator extends BlockContainer{
 	@Override
 	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
 		// TODO Auto-generated method stub
-		return new TileEntityincubator(2);
+		return new TileEntityincubator(3);
 	}
 	
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, 

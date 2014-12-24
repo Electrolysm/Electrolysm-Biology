@@ -14,8 +14,9 @@ public class Containerincubator extends Container {
 
 	public Containerincubator(TileEntityincubator te, InventoryPlayer inv) {
 		this.entity = te;
-		this.addSlotToContainer(new Slot(te,0,33,35));
-		this.addSlotToContainer(new Slot(te,1,129,36));
+		this.addSlotToContainer(new Slot(te,0,33,47));
+		this.addSlotToContainer(new Slot(te,1,129,33));
+		this.addSlotToContainer(new Slot(te,1,33,17));
 		
 		for(int x = 0; x < 3; x++){
 			for(int y =0; y < 9; y++){
@@ -25,7 +26,11 @@ public class Containerincubator extends Container {
 		for(int a = 0; a < 9; a++){
 			this.addSlotToContainer(new Slot(inv,a,8+a*18,142));
 		}
+	for(int a = 0; a < 9; a++){
+		this.addSlotToContainer(new Slot(inv,a,8+a*18,142));
 	}
+}
+	
 
 	@Override
 	public boolean canInteractWith(EntityPlayer p_75145_1_) {

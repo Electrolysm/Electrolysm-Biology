@@ -66,7 +66,7 @@ public class incubatorRecipes {
 		this.addRecipe(new ItemStack(ModItems.algaeSample, 1, 0), recipeList7);
 	}
 	
-	public void addRecipe(ItemStack input, List<ItemStack> outputs) {
+	public void addRecipe(ItemStack input, ItemStack input2, List<ItemStack> outputs) {
 		List<RecipeStack> list = new ArrayList<RecipeStack>();
 		for(int i = 0; i < outputs.size(); i++){
 			list.add(new RecipeStack(outputs.get(i)));
