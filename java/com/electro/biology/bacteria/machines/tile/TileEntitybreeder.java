@@ -4,7 +4,10 @@ import java.util.Random;
 
 
 
-import com.electro.biology.bacteria.machines.Recpies.incubatorRecipes;
+
+
+
+import com.electro.biology.bacteria.machines.Recpies.breederRecipes;
 
 import electrolysm.api.powerSystem.prefab.TileEntityMachine;
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,7 +20,7 @@ import net.minecraft.network.Packet;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityincubator extends TileEntityMachine implements IInventory {
+public class TileEntitybreeder extends TileEntityMachine implements IInventory {
 
 	 public int timer = 0;
 	 public int maxTimer = 10 * 20;
@@ -31,7 +34,7 @@ public class TileEntityincubator extends TileEntityMachine implements IInventory
         }
         
         ItemStack input = this.getStackInSlot(0);
-        ItemStack result = incubatorRecipes.id().getResult(input, new Random());
+        ItemStack result = breederRecipes.id().getResult(input, new Random());
           if(input!= null && result != null && this.canWork(20)){
         	  if (timer == maxTimer ){
         	  	timer = 0;
@@ -65,7 +68,7 @@ public class TileEntityincubator extends TileEntityMachine implements IInventory
 
     public ItemStack[] inventory;
 
-    public TileEntityincubator(int invSize) {
+    public TileEntitybreeder(int invSize) {
         super();
         inventory = new ItemStack[invSize];
     }

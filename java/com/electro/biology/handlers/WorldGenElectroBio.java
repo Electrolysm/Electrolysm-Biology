@@ -52,7 +52,7 @@ public class WorldGenElectroBio implements IWorldGenerator {
             		int xCoord = chunkX + random.nextInt(16);
             		int yCoord = getSurface(world, chunkX + random.nextInt(16), chunkZ + random.nextInt(16));
             		int zCoord = chunkZ + random.nextInt(16);
-            		(new WorldGenMinable(ModBlocks.colonyGrass, 3, Blocks.grass)).generate(world, random, xCoord, yCoord, zCoord);
+            		(new WorldGenMinable(ModBlocks.colonyGrass, 3, Blocks.tallgrass)).generate(world, random, xCoord, yCoord, zCoord);
         	}
     	}
     	if(world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.swampland ){
@@ -61,7 +61,7 @@ public class WorldGenElectroBio implements IWorldGenerator {
             int xCoord = chunkX + random.nextInt(16);
             int yCoord = getSurface(world, chunkX + random.nextInt(16), chunkZ + random.nextInt(16));
             int zCoord = chunkZ + random.nextInt(16);
-            (new WorldGenMinable(ModBlocks.colonySwamp, 3, Blocks.grass)).generate(world, random, xCoord, yCoord, zCoord);
+            (new WorldGenMinable(ModBlocks.colonySwamp, 3, Blocks.tallgrass)).generate(world, random, xCoord, yCoord, zCoord);
         }
     	}
         if(world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.forest || world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.birchForest 

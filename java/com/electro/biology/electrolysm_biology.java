@@ -16,7 +16,6 @@ import com.electro.biology.bacteria.machines.breeder;
 import com.electro.biology.bacteria.machines.harvester;
 import com.electro.biology.bacteria.agar;
 import com.electro.biology.bacteria.petriDish;
-import com.electro.biology.bacteria.machines.incubator;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;

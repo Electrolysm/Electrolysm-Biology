@@ -34,14 +34,6 @@ public static void addCrafting()
             Character.valueOf('G'), Blocks.glass,
             Character.valueOf('R'), Items.redstone);
 	
-	GameRegistry.addRecipe(new ItemStack(ModBlocks.incubator, 1),
-            "ILI", "MGR", "ILI",
-            Character.valueOf('I'), Items.iron_ingot,
-            Character.valueOf('M'),Fetcher.getItem("advancedMicrochip", 1),
-            Character.valueOf('G'), Blocks.glass,
-            Character.valueOf('L'), Blocks.redstone_lamp,
-            Character.valueOf('R'), Items.redstone);
-	
 	GameRegistry.addRecipe(new ItemStack(ModItems.sampler, 1),
             "  I", " II", "I  ",
             Character.valueOf('I'), Items.iron_ingot);

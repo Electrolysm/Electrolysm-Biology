@@ -13,16 +13,16 @@ import electrolysm.api.items.RecipeStack;
 import net.minecraft.item.ItemStack;
 
 
-public class incubatorRecipes {
+public class HarvesterRecipes {
 
-	public static final incubatorRecipes idbase = new incubatorRecipes();
+	public static final HarvesterRecipes idbase = new HarvesterRecipes();
 
 	private Map<RecipeStack, List<RecipeStack>> map = new HashMap<RecipeStack, List<RecipeStack>>();
 
-	public static final incubatorRecipes id(){
+	public static final HarvesterRecipes id(){
 		return idbase;
 	}
-	private incubatorRecipes(){
+	private HarvesterRecipes(){
 		List<ItemStack> recipeList = Arrays.asList(new ItemStack(ModItems.grassSample, 1, 1), new ItemStack(ModItems.grassSample, 1, 2), 
 				new ItemStack(ModItems.grassSample, 1, 3), new ItemStack(ModItems.grassSample, 1, 4), new ItemStack(ModItems.grassSample, 1, 5),
 				new ItemStack(ModItems.grassSample, 1, 6), new ItemStack(ModItems.grassSample, 1, 7), new ItemStack(ModItems.grassSample, 1, 8),
@@ -66,7 +66,7 @@ public class incubatorRecipes {
 		this.addRecipe(new ItemStack(ModItems.algaeSample, 1, 0), recipeList7);
 	}
 	
-	public void addRecipe(ItemStack input, ItemStack input2, List<ItemStack> outputs) {
+	public void addRecipe(ItemStack input, List<ItemStack> outputs) {
 		List<RecipeStack> list = new ArrayList<RecipeStack>();
 		for(int i = 0; i < outputs.size(); i++){
 			list.add(new RecipeStack(outputs.get(i)));

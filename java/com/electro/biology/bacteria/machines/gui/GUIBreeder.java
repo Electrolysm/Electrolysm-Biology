@@ -2,8 +2,8 @@ package com.electro.biology.bacteria.machines.gui;
 
 import org.lwjgl.opengl.GL11;
 
-import com.electro.biology.bacteria.machines.container.Containerincubator;
-import com.electro.biology.bacteria.machines.tile.TileEntityincubator;
+import com.electro.biology.bacteria.machines.container.ContainerBreeder;
+import com.electro.biology.bacteria.machines.tile.TileEntitybreeder;
 import com.electro.biology.handlers.Reference;
 
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -11,15 +11,15 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.util.ResourceLocation;
 
-public class GUIincubator extends GuiContainer {
+public class GUIBreeder extends GuiContainer {
 
-	public TileEntityincubator entity;
-	public GUIincubator(TileEntityincubator te, InventoryPlayer inv) {
-		super(new Containerincubator(te, inv));
+	public TileEntitybreeder entity;
+	public GUIBreeder(TileEntitybreeder te, InventoryPlayer inv) {
+		super(new ContainerBreeder(te, inv));
 		entity = te;
 	}
 
-	private ResourceLocation GuiTexture=new ResourceLocation(Reference.MODID,"textures/gui/incubatorGUI.png");
+	private ResourceLocation GuiTexture=new ResourceLocation(Reference.MODID,"textures/gui/breederGUI.png");
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float p_146976_1_, int p_146976_2_, int p_146976_3_) {
 		GL11.glColor4f(1F,1F,1F,1F);
