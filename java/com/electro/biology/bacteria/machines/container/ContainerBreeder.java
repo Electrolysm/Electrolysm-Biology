@@ -14,9 +14,9 @@ public class ContainerBreeder extends Container {
 
 	public ContainerBreeder(TileEntitybreeder te, InventoryPlayer inv) {
 		this.entity = te;
-		this.addSlotToContainer(new Slot(te,0,33,47));
-		this.addSlotToContainer(new Slot(te,1,129,33));
-		this.addSlotToContainer(new Slot(te,1,33,17));
+		this.addSlotToContainer(new Slot(te,0,58,49));
+		this.addSlotToContainer(new Slot(te,1,110,35));
+		this.addSlotToContainer(new Slot(te,1,58,21));
 		
 		for(int x = 0; x < 3; x++){
 			for(int y =0; y < 9; y++){

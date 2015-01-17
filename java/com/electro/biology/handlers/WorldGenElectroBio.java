@@ -42,11 +42,8 @@ public class WorldGenElectroBio implements IWorldGenerator {
 
         return height + 1;
     }
-    private void generateSurface(World world, Random random, int chunkX, int chunkZ)
-    {    	
-    	if(world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.plains || world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.forest 
-    			|| world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.swampland || world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.river
-    			|| world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.birchForest || world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.birchForestHills){
+    private void generateSurface(World world, Random random, int chunkX, int chunkZ)   	
+{
     		for (int i = 0; i < 0.01; i++)
         	{
             		int xCoord = chunkX + random.nextInt(16);
@@ -54,7 +51,7 @@ public class WorldGenElectroBio implements IWorldGenerator {
             		int zCoord = chunkZ + random.nextInt(16);
             		(new WorldGenMinable(ModBlocks.colonyGrass, 3, Blocks.tallgrass)).generate(world, random, xCoord, yCoord, zCoord);
         	}
-    	}
+
     	if(world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.swampland ){
         for (int i = 0; i < 0.1; i++)
         {
@@ -64,14 +61,6 @@ public class WorldGenElectroBio implements IWorldGenerator {
             (new WorldGenMinable(ModBlocks.colonySwamp, 3, Blocks.tallgrass)).generate(world, random, xCoord, yCoord, zCoord);
         }
     	}
-        if(world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.forest || world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.birchForest 
-        		|| world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.birchForestHills || world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.coldTaiga
-        		|| world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.coldTaigaHills || world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.forestHills
-        		|| world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.jungle || world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.jungleEdge 
-        		|| world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.jungleHills || world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.megaTaiga
-        		|| world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.megaTaigaHills || world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.swampland
-        		|| world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.taiga || world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.taigaHills
-        		|| world.getBiomeGenForCoords(chunkX, chunkZ) == BiomeGenBase.roofedForest){
             for (int i = 0; i < 5; i++)
             {
                 int xCoord = chunkX + random.nextInt(16);
@@ -79,7 +68,6 @@ public class WorldGenElectroBio implements IWorldGenerator {
                 int zCoord = chunkZ + random.nextInt(16);
                 (new WorldGenMinable(ModBlocks.colonyTree, 3, Blocks.leaves)).generate(world, random, xCoord, yCoord, zCoord);
             }
-        }
                 for (int i = 0; i < 1; i++)
                 {
                     int xCoord = chunkX + random.nextInt(16);

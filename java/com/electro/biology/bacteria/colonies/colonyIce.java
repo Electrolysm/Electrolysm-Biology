@@ -29,9 +29,7 @@ public class colonyIce extends Block{
 		setStepSound(soundTypeSnow);
 		setHardness(1.0F);
 		setResistance(5.0F);
-        float f = 0.5F;
-        float f1 = 0.015625F;
-        this.setBlockBounds(0.5F - f, 0.0F, 0.5F - f, 0.5F + f, f1, 0.5F + f);
+        this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.125F, 1.0F);
 	}
 	 public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int metadata, int fortune)
 	 {
